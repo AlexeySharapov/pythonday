@@ -1,7 +1,7 @@
-FROM ubuntu:latest
+FROM risingstack/alpine:3.3-v4.3.1-3.0.1
 
 
-#OS Update
-RUN apt-get update
-RUN apt-get -y install git git-core unzip python-pip make wget build-essential python-dev libpcre3 libpcre3-dev libssl-dev vim nano net-tools iputils-ping supervisor curl supervisor
-
+# Add your source files
+WORKDIR /usr/src/app
+COPY hello.js ./
+RUN node hello.js
