@@ -1,0 +1,12 @@
+image: registry.ecare.csolab.ru/ecareworker
+
+stages:
+  - containerize
+
+containerize:
+  stage: containerize
+  tags:
+    - ecare
+    - ecare-build
+  script:
+    - docker build -t registry.ecare.csolab.ru/wildfly_admin . &&  docker push registry.ecare.csolab.ru/wildfly_admin:latest

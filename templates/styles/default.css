@@ -1,0 +1,13 @@
+.button {
+    cursor:pointer;
+    display:block;
+    height:70px;
+    width:320px;
+    line-height:70px;
+    text-align:center;
+    background-image:url('images/buttons.png');
+    background-repeat:no-repeat;
+}
+.button.green { background-position:0 0 } /* зеленая кнопка */
+.button.green:hover { background-position:0 -350px } /* активная зеленая кнопка */
+/* и т.д. */
