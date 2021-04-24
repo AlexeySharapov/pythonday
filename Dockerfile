@@ -1,7 +1,7 @@
 FROM ubuntu
 
 
-RUN apt-get -y update && apt-get -y install git python3 python3-pip && apt-get install -y openjdk-7-jdk
+RUN apt-get -y update && apt-get -y install git python3 python3-pip
 RUN pip3 install flask
 
 RUN mkdir -p /appl
