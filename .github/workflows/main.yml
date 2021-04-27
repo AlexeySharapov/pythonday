@@ -36,7 +36,7 @@ jobs:
           echo test, and deploy your project.
 
       - name: Run a one-line script
-        run: make clear
+        run: echo $HOME
         
       - name: docker test
         run: echo Done
