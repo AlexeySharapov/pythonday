@@ -5,4 +5,4 @@ up: #command for up
 down: 
 	docker build -t test_today .
 clear:
-	docker rm test_today
+	docker rmi testhexlet
